@@ -1,3 +1,10 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+my_not_so_random_name:
+  path: /hello
+  controller: App\Controller\HelloWorldController::hello
+get_todo_list:
+  path: /todos
+  controller: App\Controller\TodoList::getTodoList
