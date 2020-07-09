@@ -1,23 +1,24 @@
 <?php
 
 
-namespace App\Entity;
+namespace App\Payload\Request;
 
 
-class Todo
+class TodoRequest
 {
-    private $id;
-
     private $label;
-
     private $checked;
 
     /**
-     * @return mixed
+     * TodoRequest constructor.
+     * @param $label
+     * @param $checked
      */
-    public function getId()
+    public function __construct(string $label,bool $checked)
     {
-        return $this->id;
+        $todoReq = new TodoRequest($label, $checked);
+        $this->label = $todoReq->label;
+        $this->checked = $todoReq->checked;
     }
 
     /**

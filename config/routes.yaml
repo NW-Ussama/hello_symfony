@@ -2,9 +2,12 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
-my_not_so_random_name:
-  path: /hello
-  controller: App\Controller\HelloWorldController::hello
-get_todo_list:
-  path: /todos
-  controller: App\Controller\TodoList::getTodoList
+# this is a way to define routes, but I prefer the use of annotations
+# this way require to add this config file, and manage routes separately from controllers
+# using annotations provides a solution with a more readable code
+#my_not_so_random_name:
+#  path: /hello
+#  controller: App\Controller\HelloWorldController::hello
+#get_todo_list:
+#  path: /todos
+#  controller: App\Controller\TodoListController::getTodoList
